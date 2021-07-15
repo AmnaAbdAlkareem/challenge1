@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{background-color: hsl(233, 47%, 7%);overflow:scroll;}
+    .attribution { font-size: 15px;line-height: 23px; text-align: left; }
+    .attribution a { color: hsl(228, 45%, 44%);}
+    .attribution p{margin-right: 10px;}
+    .container {width: 1140px; margin:150px auto 150px auto;background-color: hsl(244, 38%, 16%);display: flex;border-radius: 10px;}
+    p{text-align: center; margin: 20px 40px;}
+    .image {height: 380px;width: 100%;}
+    .image img{height: 100%;width:100%;opacity: .3;}
+    p{color:  hsla(0, 0%, 100%, 0.75);font-style: normal;}
+    .text{margin: 30px 50px 0 20px;}
+    .text h2{color:  hsl(0, 0%, 100%);padding-top: 20px;text-align: left; margin:10px 40px 20px 40px;font-size: 28px;line-height: 40px;font-size: 30px;}
+    .text .color{color:hsl(228, 45%, 44%);}
+    .parts {display: flex;text-transform: uppercase;line-height: 25px;text-align: left;}
+    .parts p {font-weight: 1000;color:  hsl(0, 0%, 100%);font-size: 20px;text-align: left;}
+    .parts p span{font-size: 11px; font-weight: 400;color: hsla(0, 0%, 100%, 0.6);text-align: left;}
+
+    @media (max-width:768px) {
+      .container { width: 375px ; height: 100%;margin: auto; flex-direction: column;}
+       .parts{flex-direction: column;}
+       .attribution{text-align: center;margin: auto; overflow: hidden;}
+       .image{flex: 1;}
+       .text h2 {font-size:20px;text-align: center;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="text">
+  <h2>Get <span class="color">insights </span> that help your business grow.</h2>
+
+  <p class="attribution">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+  experience, and overall efficiency.</p>
+<div class="parts">
+  <p>10k+ <span>companies</span></p>
+  <p>314 <span>templates</span></p>
+  <p>12m+ <span>queries</span></p>
+  </div>
+  </div>
+  <div class="image">
+    <img src="images/image-header-desktop.jpg">
+  </div>
+  </div>
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Amna Alasi</a>.
+  </div>
+</body>
+</html>
